@@ -1,8 +1,8 @@
 const AuthSchema = require("../schema/auth.schema");
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const bcrypt = require("bcryptjs");
-const emailSender = require("../utils/email-sender");
-const { accessToken, refreshToken } = require("../utils/token-generator");
+const emailSender = require("../utils/emailSender");
+const { accessToken, refreshToken } = require("../utils/token");
 const logger = require("../utils/logger");
 
 const register = async (req, res, next) => {

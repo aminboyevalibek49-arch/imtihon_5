@@ -1,4 +1,4 @@
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 
 module.exports = function (err, req, res, next) {
   try {

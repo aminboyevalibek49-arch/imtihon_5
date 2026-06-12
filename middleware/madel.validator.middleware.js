@@ -1,4 +1,4 @@
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const { MadellarValidator } = require("../validator/modellar.validation");
 
 module.exports = function (req, res, next) {

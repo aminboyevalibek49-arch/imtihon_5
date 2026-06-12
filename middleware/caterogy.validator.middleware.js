@@ -1,4 +1,4 @@
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const { CotegoriyaValidator } = require("../validator/cotegoriya.validation");
 
 module.exports = function (req, res, next) {

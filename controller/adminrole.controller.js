@@ -1,5 +1,5 @@
 const AuthSchema = require("../schema/auth.schema");
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 
 const SuperAdmin = async (req, res, next) => {
   try {

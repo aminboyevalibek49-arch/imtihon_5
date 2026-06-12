@@ -2,8 +2,8 @@ const { Router } = require("express");
 const {
   getAllCotegoriysAdmin,
   getAllMadelsAdmin,
-} = require("../controller/adminPanel.controller");
-const authorization = require("../middleware/authorization");
+} = require("../controller/admin.controller");
+const authorization = require("../middleware/authorization.middleware");
 
 const AdminPanelRouter = Router();
 

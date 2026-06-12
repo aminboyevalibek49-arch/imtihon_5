@@ -1,4 +1,4 @@
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const { SuperadminValidator } = require("../validator/superadmin.validator");
 
 module.exports = function (req, res, next) {

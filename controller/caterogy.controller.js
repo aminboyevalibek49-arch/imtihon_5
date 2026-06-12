@@ -1,7 +1,7 @@
 const AuthSchema = require("../schema/auth.schema");
 const CotegoriyaSchema = require("../schema/cotegoriya.schema");
 const MadellarSchema = require("../schema/modellar.schema");
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const logger = require("../utils/logger");
 
 const getAllCotegoriys = async (req, res, next) => {

@@ -1,4 +1,4 @@
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const jwt = require("jsonwebtoken");
 const { accessToken } = require("../utils/token-generator");
 

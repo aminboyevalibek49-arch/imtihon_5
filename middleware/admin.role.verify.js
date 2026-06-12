@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const superadminTekshiruvchi = async (req, res, next) => {
   try {
     const access_token = req.cookies.access_token;

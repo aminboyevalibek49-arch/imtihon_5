@@ -1,6 +1,6 @@
 const SevedSchema = require("../schema/seved.schema");
 const MadellarSchema = require("../schema/modellar.schema");
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 
 const getAllSeveds = async (req, res, next) => {
   try {

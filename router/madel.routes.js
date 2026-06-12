@@ -5,9 +5,9 @@ const {
   getOneMadel,
   updateMadel,
   deleteMadel,
-} = require("../controller/modellar.controller");
-const authorization = require("../middleware/authorization");
-const madellarValidationMiddleware = require("../middleware/madellar.validation.middleware");
+} = require("../controller/model.controller");
+const authorization = require("../middleware/authorization.middleware");
+const madelValidationMiddleware = require("../middleware/madel.validator.middleware");
 const { upload } = require("../utils/multer");
 
 const MadelRouter = Router();
@@ -16,14 +16,14 @@ MadelRouter.get("/get_all_madels", getAllMadels);
 MadelRouter.get("/get_one_madel/:id", getOneMadel);
 MadelRouter.post(
   "/add_madel",
-  madellarValidationMiddleware,
+  madelValidationMiddleware,
   authorization,
   upload.array("files", 3),
   addMadel,
 );
 MadelRouter.put(
   "/update_madel/:id",
-  madellarValidationMiddleware,
+  madelValidationMiddleware,
   authorization,
   upload.array("files", 3),
   updateMadel,

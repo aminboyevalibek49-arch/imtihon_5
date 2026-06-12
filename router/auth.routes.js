@@ -7,8 +7,8 @@ const {
   forgotPassword,
   resendOtp,
 } = require("../controller/auth.controller");
-const refreshToken = require("../middleware/refresh-token");
-const authValidationMiddleware = require("../middleware/auth-validation.middleware");
+const refreshToken = require("../middleware/refresh.token.middleware");
+const authValidationMiddleware = require("../middleware/auth.validator.midlleware");
 const protocol = require("../middleware/protocol");
 
 const AuthRouter = Router();

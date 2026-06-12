@@ -1,5 +1,5 @@
 const AuthSchema = require("../schema/auth.schema");
-const CustomErrorHandler = require("../utils/custom-error-handler");
+const CustomErrorHandler = require("../utils/custom.errorHandler");
 const bcrypt = require("bcryptjs");
 
 const getAlluser = async (req, res, next) => {

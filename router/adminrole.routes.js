@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { SuperAdmin } = require("../controller/superadmin.controller");
+const { SuperAdmin } = require("../controller/adminrole.controller");
 const { superadminTekshiruvchi } = require("../middleware/superadmin-verify");
 const superadminValidationMiddleware = require("../middleware/superadmin-validation.middleware");
 

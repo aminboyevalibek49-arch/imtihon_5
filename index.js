@@ -10,12 +10,12 @@ const errorMiddleware = require("./middleware/error.middleware");
 
 const AuthRouter = require("./router/auth.routes");
 const UserRouter = require("./router/user.routes");
-const CotegoryRouter = require("./router/cotegory.routes");
+const CategoryRouter = require("./router/caterogy.routes");
 const MadelRouter = require("./router/madel.routes");
 const SevedRouter = require("./router/saved.routes");
-const uploadRouter = require("./router/upload.routes");
-const { SuperAdminRouter } = require("./router/superadmin.routes");
-const { AdminPanelRouter } = require("./router/adminPanel.routes");
+const uploadRouter = require("./router/uploads.routes");
+const { SuperAdminRouter } = require("./router/adminrole.routes");
+const { AdminPanelRouter } = require("./router/admin.routes");
 
 const app = express();
 
@@ -32,7 +32,7 @@ app.use("/images", express.static("uploads"));
 
 app.use(AuthRouter);
 app.use(UserRouter);
-app.use(CotegoryRouter);
+app.use(CategoryRouter);
 app.use(MadelRouter);
 app.use(SevedRouter);
 app.use(uploadRouter);
